@@ -11,7 +11,7 @@ html {
 }
 
 body,
-h1,
+
 h2,
 h3,
 h4,
@@ -21,6 +21,23 @@ h6 {
     font-weight: 700;
 }
 
+h1 {padding-top: 20%;
+    font-family: "Book Antiqua", Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
+	font-size: 90px;
+	font-style: Italic;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 50px;
+}
+h2 {padding-top: 2%;
+    font-family: "Book Antiqua", Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
+	font-size: 40px;
+	font-style: Bold;
+	font-variant: normal;
+	font-weight: 1000;
+
+}
+
 .topnav {
     font-size: 14px; 
 }
@@ -28,40 +45,47 @@ h6 {
 .lead {
     font-size: 18px;
     font-weight: 400;
-}
 
+}
 .intro-header {
     padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
-    padding-bottom: 50px;
     text-align: center;
     color: #f8f8f8;
-    background: url(../img/intro-bg.jpg) no-repeat center center;
-    background-size: cover;
+    background: url(../img/Cover.jpg) no-repeat center center;
+    background-size: auto 100%;
 }
 
 .intro-message {
     position: relative;
-    padding-top: 20%;
-    padding-bottom: 20%;
+    padding-top: 0%;
+    padding-bottom: 47%;
+    
 }
 
 .intro-message > h1 {
     margin: 0;
     text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
     font-size: 5em;
+    
 }
 
 .intro-divider {
-    width: 400px;
+    width: 800px;
     border-top: 1px solid #f8f8f8;
     border-bottom: 1px solid rgba(0,0,0,0.2);
 }
-
+.intro-divider {
+    top: 50%;  
+    transform: translateY(-3900%);
+}
 .intro-message > h3 {
     text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+    padding-top: %;
+   
 }
 
 @media(max-width:767px) {
+    
     .intro-message {
         padding-bottom: 15%;
     }
@@ -74,6 +98,7 @@ h6 {
         display: block;
         margin-bottom: 20px;
         padding: 0;
+        
     }
 
     ul.intro-social-buttons > li:last-child {
@@ -83,12 +108,24 @@ h6 {
     .intro-divider {
         width: 100%;
     }
+   h1{
+    font-size: 50px
+    } 
+  
+    h2 {
+    Padding-top: -200px;
+    font-size: 30px
+    }
+    .intro-divider {
+      width: 350px;
+      transform: translateY(-6800%);
+    }
 }
 
 .network-name {
     text-transform: uppercase;
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 100;
     letter-spacing: 2px;
 }
 
@@ -168,3 +205,10 @@ footer {
 p.copyright {
     margin: 15px 0 0;
 }
+
+/*IMAGES*/
+/*
+.img-responsive{
+vertical-align: middle;
+}
+*/
