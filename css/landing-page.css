@@ -204,7 +204,12 @@ p.copyright {
 .aboutimage {
     margin-top: 20px;
 }
-
+.containerCorousel{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    
+}
+    
 
 /*IMAGES*/
 
