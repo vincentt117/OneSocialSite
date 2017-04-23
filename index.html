@@ -54,10 +54,10 @@
                         <a href="#AbouttheApp">About</a>
                     </li>
                     <li>
-                        <a href="#services">Services</a>
+                        <a href="#Safety">Safety</a>
                     </li>
                     <li>
-                        <a href="#contact">Contact</a>
+                        <a href="#contact">Contact Us</a>
                     </li>
                 </ul>
             </div>
@@ -123,7 +123,7 @@
                             more followers, more friends, and more likes!</p>
                 </div>
                 <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                    <img class="aboutimage img-responsive" src="img/AboutSection.jpg" alt="">
+                    <img class="aboutimage img-responsive" src="https://images.unsplash.com/photo-1457433575995-8407028a9970?dpr=1.25&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=&bg=" alt="">
                 </div>
             </div>
 
@@ -145,7 +145,7 @@
                     <p class="lead"> Don't like facial recognition? Don't worry! We can provide QR Codes (yeah those weird Blackberry square barcodes) and text message options.
                        </div>
                         <div class="col-lg-5 col-sm-pull-6  col-sm-6">
-                            <img class="aboutimage img-responsive" src="img/WOWphoto.jpg" alt="">
+                            <img class="aboutimage img-responsive" src="https://images.unsplash.com/photo-1485889280870-db9129696fae?dpr=1.25&auto=format&fit=crop&w=1500&h=1072&q=80&cs=tinysrgb&crop=&bg=" alt="">
                         </div>
                 
 
@@ -155,7 +155,7 @@
     <!-- /.container -->
     <!-- Page Content -->
 
-    <a name="services"></a>
+    <a name="Safety"></a>
     <div class="content-section-a">
 
         <div class="container">
@@ -163,150 +163,93 @@
                 <div class="col-lg-5 col-sm-6">
                     <div class="clearfix"></div>
                     <h2 class="section-heading">Controlled Privacy</h2>
+                    
+<!--        +++++++++++++++++++++++++++more button+++++++++++++++++-->
+<script src="js/jquery.js"></script>  
+<script>
+    $(function(){ /* to make sure the script runs after page load */
+
+	$('.item').each(function(event){ /* select all divs with the item class */
+	
+		var max_length = 604; /* set the max content length before a read more link will be added */
+		
+		if($(this).html().length > max_length){ /* check for content length */
+			
+			var short_content 	= $(this).html().substr(0,max_length); /* split the content in two parts */
+			var long_content	= $(this).html().substr(max_length);
+			
+			$(this).html(short_content+
+						 '<a href="#" class="read_more"><br/>Read More</a>'+
+						 '<span class="more_text" style="display:none;">'+long_content+'</span>'); /* Alter the html to allow the read more functionality */
+						 
+			$(this).find('a.read_more').click(function(event){ /* find the a.read_more element within the new html and bind the following code to it */
+ 
+				event.preventDefault(); /* prevent the a from changing the url */
+				$(this).hide(); /* hide the read more button */
+				$(this).parents('.item').find('.more_text').show(); /* show the .more_text span */
+		 
+			});
+			
+		}
+		
+	});
+ 
+ 
+});                
+</script>
+                    <div class="item">
+                    
                     <p class="lead">
                         The One is the 3rd party app you’ve been waiting for. We require no access to your information and have security policies that only allow others to view your profiles, if and when you let them.
-                        <p class="lead">
+                    <br>
+                    <br>
                             No matter the situation you’re in, you can change your profile settings to let those you meet add you only on the combination of social media platforms you desire, instantly.
-                        </p>
-                        <p class="lead"><i>
+                    <br>
+                    <br>
                             Out meeting people at the bar? You can configure your profile with ease to add your new friends on snapchat and insta so they can follow your crazy party stories.
-                        </p>
-                        <p class="lead">
+                    <br>
+                    <br>
                             At a networking event meeting potential new employers? Change your profile settings to only add new contacts on linked-in and twitter at once, so they can follow your professional career progression and not see the video of you shot gunning a hard lemonade
                             with your friends.
-                        </p>
-                        <p class="lead">
-                            Just met someone cute at the gym? Change your profile to add them on facebook and Insta so they can see your blurry gym mirror selfies, showing off that rockin’ bod.</p>< /i>
+                    <br>
+                    <br>
+                            Just met someone cute at the gym? Change your profile to add them on facebook and Insta so they can see your blurry gym mirror selfies, showing off that rockin’ bod.
+                        
+                        
+                    </div>
                 </div>
+                                     
                 <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                    <img class="img-responsive" src="img/Safety.png" alt="">
+                    <img class="img-responsive" src="https://images.unsplash.com/photo-1461669802687-84a1aee43a29?dpr=1.25&auto=format&fit=crop&w=1500&h=946&q=80&cs=tinysrgb&crop=&bg=" alt="">
 
                 </div>
             </div>
-
-        </div>
-        <!-- /.container -->
-    </div>
-    <!-- /.content-section-a -->
-
-    <div class="content-section-b">
-        <a name="WOW"></a>
-
-        <div class="containerCorousel">
-            
-
-            <!--           HERE I WANT TO HAVE A JQUERY CAROUSELLE OF US IN THE CONTAINER -->
-            <!DOCTYPE html>
-<html lang="en">
-<head>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <style>
-  .carousel-inner > .item > img,
-  .carousel-inner > .item > a > img {
-      width: 70%;
-      margin: auto;
-  }
-  </style>
-<body>
-
-<div class="container">
-  <br>
-  <div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-      <li data-target="#myCarousel" data-slide-to="3"></li>
-       <li data-target="#myCarousel" data-slide-to="4"></li>
-    </ol>
-
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner" role="listbox">
-
-      <div class="item active">
-        <img src="img/ONELogo.jpg" alt="Logo" width="460" height="345">
-        <div class="carousel-caption">
-          <p>The Men Behind The Madness</p>
-        </div>
-      </div>
-
-      <div class="item">
-        <img src="img/Vinny.png" alt="Vincent" width=auto height="200">
-        <div class="carousel-caption">
-          <h3>Vincent Teng</h3>
-          <p>CEO/Meme Expert</p>
-        </div>
-      </div>
-    
-      <div class="item">
-        <img src="img/MatthewMorganSm.png" alt="Matthew" width="460" height="345">
-        <div class="carousel-caption">
-          <h3>Matthew Morgan</h3>
-          <p>Business Team Lead/Ladies man</p>
-        </div>
-      </div>
-
-      <div class="item">
-        <img src="img_flower2.jpg" alt="Sean" width="460" height="345">
-        <div class="carousel-caption">
-          <h3>Flowers</h3>
-          <p>Social Media Executive/Asian Guy</p>
-        </div>
-      </div>
-        
-        <div class="item">
-        <img src="img_flower2.jpg" alt="Janakan" width="460" height="345">
-        <div class="carousel-caption">
-          <h3>Flowers</h3>
-          <p>Social Media Executive/Asian Guy</p>
-        </div>
-      </div>
-        
-  
-    </div>
-
-    <!-- Left and right controls -->
-    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>
-</div>
-
-</body>
-</html>
-            <!--            SECTION SHOULD BE ENTITLED "ABOUT US"-->
-
-        </div>
-        <!-- /.container -->
 
         <!-- /.content-section-b -->
+        </div>
+    </div>
+    
+    
+    <div class="content-section-b">
 
-        <div class="content-section-a">
+        <div class="container">
 
-            <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
+                    <h2 class="section-heading">About Us<br></h2>
+                    <p class="lead">Sidetrack is a group of 4 tech-savvy, educated and driven young entrepreneurs with the ambition to unite the world through a single app.  United by the goal of seamless networking, Sidetrack members shall work tirelessly in order to provide a service that is not only easy to use, but also effective and safe.
 
-                <div class="row">
-                    <div class="col-lg-5 col-sm-6">
-                        <hr class="section-heading-spacer">
-                        <div class="clearfix"></div>
-                        <h2 class="section-heading">Google Web Fonts and<br>Font Awesome Icons</h2>
-                        <p class="lead">This template features the 'Lato' font, part of the <a target="_blank" href="http://www.google.com/fonts">Google Web Font library</a>, as well as <a target="_blank" href="http://fontawesome.io">icons from Font Awesome</a>.</p>
-                    </div>
-                    <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                        <img class="img-responsive" src="img/phones.png" alt="">
-                    </div>
-                </div>
+                    <p class="lead"> Our mission is to offer a service of the highest kind and quality, that allows users to see the value of connection and expanding their social networks as far as possible. We have a commitment to utilizing our skills to continually improve on our product in order to help foster and strengthen new budding relationships. </p>
+                       </div>
+                        <div class="col-lg-5 col-sm-pull-6  col-sm-6">
+                            <img class="aboutimage img-responsive" src="img/ONELogo.jpg" alt="">
+                        </div>
+                
 
             </div>
-            <!-- /.container -->
-
         </div>
+    </div>
+
         <!-- /.content-section-a -->
 
         <a name="contact"></a>
@@ -316,18 +259,18 @@
 
                 <div class="row">
                     <div class="col-lg-6">
-                        <h2>Connect to Start Bootstrap:</h2>
+                        <h2>Connect With Us:</h2>
                     </div>
                     <div class="col-lg-6">
                         <ul class="list-inline banner-social-buttons">
                             <li>
-                                <a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
+                                <a href="https://twitter.com/onesocial_media" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
                             </li>
                             <li>
-                                <a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+                                <a href="https://www.gofundme.com/onesocialmedia" class="btn btn-default btn-lg"><i class="fa fa-credit-card" aria-hidden="true"></i> <span class="network-name">Go Fund Me</span></a>
                             </li>
                             <li>
-                                <a href="#" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a>
+                                <a href="https://www.linkedin.com/in/onesocial-media-36bb3b13b/" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a>
                             </li>
                         </ul>
                     </div>
@@ -354,14 +297,14 @@
                             </li>
                             <li class="footer-menu-divider">&sdot;</li>
                             <li>
-                                <a href="#services">Services</a>
+                                <a href="#Safety">Safety</a>
                             </li>
                             <li class="footer-menu-divider">&sdot;</li>
                             <li>
-                                <a href="#contact">Contact</a>
+                                <a href="#contact">Contact Us</a>
                             </li>
                         </ul>
-                        <p class="copyright text-muted small">Copyright &copy; Your Company 2014. All Rights Reserved</p>
+                        <p class="copyright text-muted small"> Email Us Directly At: OneSocialMediaApp@Gmail.com</p>
                     </div>
                 </div>
             </div>
